@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <ScrollPane prefHeight="500.0" prefWidth="627.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <content>
+            <Pane fx:id="jPanel1" prefHeight="842.0" prefWidth="595.0">
+               <children>
+                  <Label layoutX="205.0" layoutY="60.0" text="Department of ENT">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="131.0" layoutY="90.0" text="Fiberoptic Nasopharyngolaryngoscopy Report">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="141.0" text="Name:" />
+                  <Label layoutX="302.0" layoutY="141.0" text="Age:" />
+                  <Label layoutX="417.0" layoutY="141.0" text="Date:" />
+                  <TextField fx:id="txt_name" layoutX="95.0" layoutY="139.0" prefHeight="25.0" prefWidth="198.0" stylesheets="@../css/text_box.css" />
+                  <TextField fx:id="txt_age" layoutX="332.0" layoutY="139.0" prefHeight="25.0" prefWidth="67.0" stylesheets="@../css/text_box.css" />
+                  <VBox layoutX="429.0" layoutY="175.0" prefHeight="577.0" prefWidth="142.0">
+                     <children>
+                        <ImageView fx:id="image1" fitHeight="141.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true" />
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                        <ImageView fx:id="image2" fitHeight="141.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true" />
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                        <ImageView fx:id="image3" fitHeight="141.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true" />
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                        <ImageView fx:id="image4" fitHeight="141.0" fitWidth="142.0" layoutX="10.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+                  <Label layoutX="48.0" layoutY="201.0" text="Findings:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="60.0" layoutY="224.0" prefHeight="256.0" prefWidth="120.0">
+                     <children>
+                        <Label text="Nose:" />
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Nasopharynx:" />
+                        <Region layoutX="10.0" layoutY="194.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Base of tongue:" />
+                        <Region layoutX="10.0" layoutY="27.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Label layoutX="10.0" layoutY="27.0" text="Valleculla:" />
+                        <Region layoutX="10.0" layoutY="178.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Epiglotties:" />
+                        <Region layoutX="10.0" layoutY="199.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Label layoutX="10.0" layoutY="27.0" text="Hypopharynx:" />
+                        <Region layoutX="10.0" layoutY="198.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Label layoutX="10.0" layoutY="44.0" text="Supraglottic Larynx:" />
+                        <Region layoutX="10.0" layoutY="188.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Label layoutX="10.0" layoutY="61.0" text="Vocal Cord:" />
+                     </children>
+                  </VBox>
+                  <Label layoutX="137.0" layoutY="39.0" text=" Khulna Medical College Hospital">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="196.0" layoutY="224.0" prefHeight="259.0" prefWidth="208.0">
+                     <children>
+                        <TextField fx:id="txt_nose" stylesheets="@../css/text_box.css" text="NAD" />
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="txt_naaso" layoutX="10.0" layoutY="10.0" stylesheets="@../css/text_box.css" text="NAD" />
+                        <Region layoutX="10.0" layoutY="194.0" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="txt_base" layoutX="10.0" layoutY="231.0" stylesheets="@../css/text_box.css" text="NAD" />
+                        <Region layoutX="10.0" layoutY="27.0" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="txt_valle" layoutX="10.0" layoutY="230.0" stylesheets="@../css/text_box.css" text="NAD" />
+                        <Region layoutX="10.0" layoutY="178.0" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="txt_epig" layoutX="10.0" layoutY="10.0" stylesheets="@../css/text_box.css" text="NAD" />
+                        <Region layoutX="10.0" layoutY="199.0" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="txt_hypo" layoutX="10.0" layoutY="180.0" stylesheets="@../css/text_box.css" text="NAD" />
+                        <Region layoutX="10.0" layoutY="198.0" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="txt_supra" layoutX="10.0" layoutY="205.0" stylesheets="@../css/text_box.css" text="NAD" />
+                        <Region layoutX="10.0" layoutY="188.0" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="txt_vocal" layoutX="10.0" layoutY="230.0" stylesheets="@../css/text_box.css" text="NAD" />
+                     </children>
+                  </VBox>
+                  <Separator layoutX="41.0" layoutY="119.0" prefHeight="4.0" prefWidth="525.0" />
+                  <Label layoutX="49.0" layoutY="565.0" text="Diagnosis:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="595.0" text="Advice:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_diag" layoutX="195.0" layoutY="562.0" prefHeight="25.0" prefWidth="208.0" stylesheets="@../css/text_box.css" text="NAD" />
+                  <TextArea fx:id="txt_advice" layoutX="195.0" layoutY="595.0" prefHeight="129.0" prefWidth="208.0" stylesheets="@../css/text_box.css" text="NAD" />
+                  <Label layoutX="50.0" layoutY="176.0" text="Referred By :" />
+                  <TextField fx:id="txt_ref" layoutX="139.0" layoutY="172.0" prefHeight="25.0" prefWidth="268.0" stylesheets="@../css/text_box.css" />
+                  <Label layoutX="62.0" layoutY="485.0" text="Ear:" />
+                  <Label layoutX="75.0" layoutY="502.0" text="Left:" />
+                  <Label layoutX="75.0" layoutY="533.0" text="Right:" />
+                  <TextField fx:id="txt_right" layoutX="195.0" layoutY="531.0" prefHeight="25.0" prefWidth="208.0" stylesheets="@../css/text_box.css" text="NAD" />
+                  <TextField fx:id="txt_left" layoutX="195.0" layoutY="500.0" prefHeight="25.0" prefWidth="208.0" stylesheets="@../css/text_box.css" text="NAD" />
+                  <ComboBox fx:id="cmb_done" layoutX="65.0" layoutY="789.0" prefHeight="27.0" prefWidth="172.0" stylesheets="@../css/combo_box.css" />
+                  <Label layoutX="43.0" layoutY="733.0" text="Done By:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cmb_check" layoutX="278.0" layoutY="789.0" prefHeight="27.0" prefWidth="294.0" stylesheets="@../css/combo_box.css" />
+                  <Label layoutX="240.0" layoutY="735.0" text="Checked By:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="764.0" text="Sign:" />
+                  <Label layoutX="277.0" layoutY="764.0" text="Sign:" />
+                  <Separator layoutX="91.0" layoutY="780.0" prefHeight="0.0" prefWidth="144.0" />
+                  <Separator layoutX="304.0" layoutY="778.0" prefHeight="0.0" prefWidth="144.0" />
+                  <DatePicker fx:id="datePicker" layoutX="450.0" layoutY="137.0" prefHeight="25.0" prefWidth="118.0" stylesheets="@../css/datepicker.css" />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </center>
+   <right>
+      <VBox prefHeight="500.0" prefWidth="196.0" style="-fx-background-color: #22223b;" BorderPane.alignment="CENTER">
+         <children>
+            <Region layoutX="10.0" layoutY="190.0" prefHeight="4.0" prefWidth="196.0" />
+            <Button fx:id="img_btn_1" mnemonicParsing="false" onAction="#imgAdd" prefHeight="45.0" prefWidth="196.0" stylesheets="@../css/btn_Press.css" text="Image 1" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="img_btn_2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#imgAdd" prefHeight="45.0" prefWidth="200.0" stylesheets="@../css/btn_Press.css" text="Image 2" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="img_btn_3" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#imgAdd" prefHeight="45.0" prefWidth="196.0" stylesheets="@../css/btn_Press.css" text="Image 3" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="img_btn_4" layoutX="25.0" layoutY="320.0" mnemonicParsing="false" onAction="#imgAdd" prefHeight="45.0" prefWidth="196.0" stylesheets="@../css/btn_Press.css" text="Image 4" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Region prefHeight="6.0" prefWidth="196.0" />
+            <Button fx:id="del_img_1" mnemonicParsing="false" onAction="#imgDel" prefHeight="45.0" prefWidth="196.0" stylesheets="@../css/del_btn.css" text="Clear Image 1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="del_img_2" layoutX="10.0" layoutY="215.0" mnemonicParsing="false" onAction="#imgDel" prefHeight="45.0" prefWidth="196.0" stylesheets="@../css/del_btn.css" text="Clear Image 2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="del_img_3" layoutX="10.0" layoutY="260.0" mnemonicParsing="false" onAction="#imgDel" prefHeight="45.0" prefWidth="196.0" stylesheets="@../css/del_btn.css" text="Clear Image 3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="del_img_4" layoutX="10.0" layoutY="288.0" mnemonicParsing="false" onAction="#imgDel" prefHeight="45.0" prefWidth="196.0" stylesheets="@../css/del_btn.css" text="Clear Image 4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Region layoutX="10.0" layoutY="10.0" prefHeight="6.0" prefWidth="196.0" />
+            <Button layoutX="10.0" layoutY="333.0" mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="196.0" stylesheets="@../css/del_btn.css" text="Reset">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Region layoutX="10.0" layoutY="378.0" prefHeight="6.0" prefWidth="196.0" />
+            <Button fx:id="print_btn" layoutX="10.0" layoutY="320.0" mnemonicParsing="false" onAction="#print" prefHeight="39.0" prefWidth="196.0" stylesheets="@../css/btn_Press.css" text="Print" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <Pane onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="34.0" prefWidth="817.0" style="-fx-background-color: #22223b;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="783.0" mnemonicParsing="false" onAction="#exit" prefHeight="14.0" prefWidth="35.0" stylesheets="@../css/exit.css" text="X">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="749.0" mnemonicParsing="false" onAction="#min" prefHeight="18.0" prefWidth="34.0" stylesheets="@../css/min.css" text="_">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="12.0" layoutY="9.0" text="FOL Report (KMCH)" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
